@@ -188,6 +188,14 @@
 				</li>
 			</ul>
 
+			<li><a href="https://dmoj.ca/">DMOJ</a></li>
+			<ul>
+				<li>
+					The DMOJ is a modern contest platform and archive of programming
+					problems. It's also entirely open source.
+				</li>
+			</ul>
+
 			<li>
 				<a href="https://cses.fi/book/book.pdf"
 					>Competitive Programmer's Handbook</a
