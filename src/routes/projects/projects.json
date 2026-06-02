@@ -16,5 +16,11 @@
 		"title": "Atmoscope - End to End ML Project",
 		"link": "https://github.com/oliverflood/atmoscope",
 		"description": "An end-to-end ml classification project using the NASA CLOUD GAZE dataset with high-quality labels and more realistic cloud images. The goal is to create an open-source cloud identification app that improves upon existing solutions like CloudSpotter."
+	},
+	{
+		"author": "Carson Secrest",
+		"title": "Beaver CS Purity Test",
+		"link": "https://beaverpurity.com",
+		"description": "A quiz that assesses how 'pure' of a computer science major you are and shows how you compare to other students at OSU."
 	}
 ]
