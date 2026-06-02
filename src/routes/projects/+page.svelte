@@ -1,3 +1,7 @@
+<script lang="ts">
+	import projects from './projects.json';
+</script>
+
 <svelte:head>
 	<title>Projects: acm@osu</title>
 	<meta name="description" content="" />
@@ -34,38 +38,10 @@
 
 		<hr />
 
-		<h3><a href="https://formacv.org/">FormaCV - Resume Builder</a></h3>
-		<h4>Peter Mora-Stevens</h4>
-		<p>
-			Want to get hired fast? FormaCV helps you make your resume quickly
-			and intuitively. Although not currently looking for more
-			contributors, FormaCV is built with React and ReactPDF.
-		</p>
-
-		<h3>
-			<a href="https://github.com/lukasmwerner/mark"
-				>Mark - Distributed Bookmarking</a
-			>
-		</h3>
-		<h4>Lukas Werner</h4>
-		<p>
-			A basic decentralized bookmarking service with local full text
-			search and automatic machine learning tagging. Built using Golang,
-			Web Technologies, CRDTs, and SQLite, never lose your bookmarks
-			again.
-		</p>
-
-		<h3>
-			<a href="https://github.com/oliverflood/atmoscope"
-				>Atmoscope - End to End ML Project</a
-			>
-		</h3>
-		<h4>Oliver Flood</h4>
-		<p>
-			An end-to-end ml classification project using the NASA CLOUD GAZE
-			dataset with high-quality labels and more realistic cloud images.
-			The goal is to create an open-source cloud identification app that
-			improves upon existing solutions like CloudSpotter.
-		</p>
+		{#each projects as project}
+			<h3><a href={project.link}>{project.title}</a></h3>
+			<h4>{project.author}</h4>
+			<p>{project.description}</p>
+		{/each}
 	</div>
 </article>
