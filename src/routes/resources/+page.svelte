@@ -33,11 +33,13 @@
 			<a href="https://discord.com/invite/cCtv2RgAJ8">Invite</a>!
 		</p>
 
-		<h3>Office Hours (most) Fridays 3-5pm in KEC Atrium</h3>
+		<h3>Office Hours (most) Fridays in KEC Atrium</h3>
 		<p>
-			Members of our leadership board host office hours every Friday in
+			Members of our leadership board host office hours most Fridays in
 			the Kelley Engineering Center atrium. These office hours are for
-			anyone in the larger CS community.
+			anyone in the larger CS community. Just ping <code>@leadership</code
+			>
+			in the discord and we will make sure someone is there to help!
 		</p>
 
 		<h3>Mock Interview Prep</h3>
@@ -191,8 +193,8 @@
 			<li><a href="https://dmoj.ca/">DMOJ</a></li>
 			<ul>
 				<li>
-					The DMOJ is a modern contest platform and archive of programming
-					problems. It's also entirely open source.
+					The DMOJ is a modern contest platform and archive of
+					programming problems. It's also entirely open source.
 				</li>
 			</ul>
 
