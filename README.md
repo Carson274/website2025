@@ -53,18 +53,29 @@ slides component in the markdown body:
 Files in `static/` are served from the site root, so
 `static/slides/example.pdf` is available at `/slides/example.pdf`.
 
-You can publish the website as long as you have access to the `acmwww` group
-on the engineering servers. It is *highly* recommended that you setup your
-`~/.ssh/config` file to include your ssh key for flip. e.g. 
+## Updating Projects
+The projects page is generated from `src/routes/projects/projects.json`. To add
+or edit a project, update that JSON file with these fields:
 
-```sshconfig
-Host flip
-	User onid-username
-	HostName flip.engr.oregonstate.edu
-	IdentityFile ~/.ssh/oregonstate_ed25519.key
-
+```json
+{
+	"author": "Project Author",
+	"title": "Project Title",
+	"link": "https://example.com/project",
+	"description": "A short description of the project."
+}
 ```
 
-First run `npm run build` (or whatever package manager you like to use) then run
-`./ship.sh` to copy the files over and ensure proper permissions are set. (this
-will output a ton of known junk into your terminal)
+The projects page imports this JSON at build time and the site is prerendered,
+so project content is statically rendered into the generated page. There is no
+client-side fetch or loading loop for project data.
+
+## Deployment
+This website is deployed with GitHub Pages.
+
+Deployments are automatic: once code lands in the `main` branch, GitHub Pages
+will build and publish the site. (The `./ship.sh` script is left over from when
+the site was hosted with OSU's www engineering servers)
+
+You can still run `npm run build` locally before merging to verify that the site
+builds successfully.
