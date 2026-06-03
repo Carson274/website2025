@@ -61,10 +61,35 @@ or edit a project, update that JSON file with these fields:
 {
 	"author": "Project Author",
 	"title": "Project Title",
-	"link": "https://example.com/project",
-	"description": "A short description of the project."
+	"description": "A short description of the project.",
+	"image": "/projects/example.png",
+	"links": [
+		{ "type": "github", "url": "https://github.com/org/repo" },
+		{ "type": "website", "url": "https://example.com/" }
+	]
 }
 ```
+### Project images
+`image` is a path to a cover image served from `static/` (for example, put a
+file at `static/projects/example.png` and reference it as `/projects/example.png`).
+If `image` is omitted, the card shows a branded placeholder, so it's fine to
+leave it off until you have a real image.
+
+### Project links
+Each entry in `links` renders as an icon button on the card. The `type`
+controls which icon and tooltip are shown:
+
+| `type`    | Icon         | Label     |
+| --------- | ------------ | --------- |
+| `github`  | GitHub logo  | GitHub    |
+| `website` | Globe        | Live site |
+| `devpost` | Devpost logo | Devpost   |
+| `demo`    | Play         | Demo      |
+
+Any other `type` falls back to a generic external-link icon using the `type`
+string as its label. To add a new recognized type, extend the `linkMeta` map in
+`src/routes/projects/+page.svelte` (custom logos live in `src/lib/`, e.g.
+`DevpostIcon.svelte`).
 
 The projects page imports this JSON at build time and the site is prerendered,
 so project content is statically rendered into the generated page. There is no
