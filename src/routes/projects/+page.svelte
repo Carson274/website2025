@@ -33,6 +33,12 @@
 	function metaFor(type: string) {
 		return linkMeta[type] ?? { icon: ExternalLinkIcon, label: type };
 	}
+
+	// A project's cover can be a still image or a short video clip; videos
+	// autoplay as a silent loop, like an animated GIF but far smaller.
+	function isVideo(src: string) {
+		return /\.(mp4|webm|mov)$/i.test(src);
+	}
 </script>
 
 <svelte:head>
@@ -73,7 +79,17 @@
 				<article
 					class="flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition-shadow hover:shadow-md"
 				>
-					{#if project.image}
+					{#if project.image && isVideo(project.image)}
+						<video
+							src={project.image}
+							class="aspect-video w-full object-cover"
+							autoplay
+							loop
+							muted
+							playsinline
+							aria-label={project.title}
+						></video>
+					{:else if project.image}
 						<img
 							src={project.image}
 							alt={project.title}

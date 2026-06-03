@@ -12,7 +12,7 @@
 		"author": "Lukas Werner",
 		"title": "Mark - Distributed Bookmarking",
 		"description": "A basic decentralized bookmarking service with local full text search and automatic machine learning tagging. Built using Golang, Web Technologies, CRDTs, and SQLite, never lose your bookmarks again.",
-		"image": "/projects/tui-demo.gif",
+		"image": "/projects/tui-demo.mp4",
 		"links": [
 			{ "type": "github", "url": "https://github.com/lukasmwerner/mark" }
 		]
