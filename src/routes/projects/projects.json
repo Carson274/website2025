@@ -2,25 +2,38 @@
 	{
 		"author": "Peter Mora-Stevens",
 		"title": "FormaCV - Resume Builder",
-		"link": "https://formacv.org/",
-		"description": "Want to get hired fast? FormaCV helps you make your resume quickly and intuitively. Although not currently looking for more contributors, FormaCV is built with React and ReactPDF."
+		"description": "Want to get hired fast? FormaCV helps you make your resume quickly and intuitively. Although not currently looking for more contributors, FormaCV is built with React and ReactPDF.",
+		"image": "/projects/formacv.png",
+		"links": [
+			{ "type": "website", "url": "https://formacv.org/" }
+		]
 	},
 	{
 		"author": "Lukas Werner",
 		"title": "Mark - Distributed Bookmarking",
-		"link": "https://github.com/lukasmwerner/mark",
-		"description": "A basic decentralized bookmarking service with local full text search and automatic machine learning tagging. Built using Golang, Web Technologies, CRDTs, and SQLite, never lose your bookmarks again."
+		"description": "A basic decentralized bookmarking service with local full text search and automatic machine learning tagging. Built using Golang, Web Technologies, CRDTs, and SQLite, never lose your bookmarks again.",
+		"image": "/projects/tui-demo.gif",
+		"links": [
+			{ "type": "github", "url": "https://github.com/lukasmwerner/mark" }
+		]
 	},
 	{
 		"author": "Oliver Flood",
 		"title": "Atmoscope - End to End ML Project",
-		"link": "https://github.com/oliverflood/atmoscope",
-		"description": "An end-to-end ml classification project using the NASA CLOUD GAZE dataset with high-quality labels and more realistic cloud images. The goal is to create an open-source cloud identification app that improves upon existing solutions like CloudSpotter."
+		"description": "An end-to-end ml classification project using the NASA CLOUD GAZE dataset with high-quality labels and more realistic cloud images. The goal is to create an open-source cloud identification app that improves upon existing solutions like CloudSpotter.",
+		"image": "/projects/atmoscope.png",
+		"links": [
+			{ "type": "github", "url": "https://github.com/oliverflood/atmoscope" }
+		]
 	},
 	{
 		"author": "Carson Secrest",
-		"title": "Beaver CS Purity Test",
-		"link": "https://beaverpurity.com",
-		"description": "A quiz that assesses how 'pure' of a computer science major you are and shows how you compare to other students at OSU."
+		"title": "Beaver Purity Test - Computer Science Edition",
+		"description": "A quiz that assesses how 'pure' of a computer science major you are and shows how you compare to other students at OSU.",
+		"image": "/projects/beaver_purity.png",
+		"links": [
+			{ "type": "github", "url": "https://github.com/Carson274/BeaverCsPurity" },
+			{ "type": "website", "url": "https://beaverpurity.com" }
+		]
 	}
 ]
